@@ -22,6 +22,6 @@ Three mode available:
 # Installation
 
 - git clone https://github.com/amirfabo/telegram-scanner.git
-- cd your-repo-name
+- cd telegram-scanner
 - pip install -r requirements.txt
 - python3 scanner.py
