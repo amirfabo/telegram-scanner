@@ -16,12 +16,12 @@ Three mode available:
 
 # Requirements
 
-Python 3.10+
-Telethon
+1. Python 3.10+
+2. Telethon
 
 # Installation
 
-git clone https://github.com/amirfabo/telegram-scanner.git
-cd your-repo-name
-pip install -r requirements.txt
-python3 scanner.py
+- git clone https://github.com/amirfabo/telegram-scanner.git
+- cd your-repo-name
+- pip install -r requirements.txt
+- python3 scanner.py
