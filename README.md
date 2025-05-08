@@ -4,9 +4,9 @@
 
 Three mode available:
 
-1. Occupied (username is claimable or already taken)
-2. Invalid (username is banned or is collectible [NFT])
-3. On Fragment (username is for sale or auction proceed)
+1. Occupied (username is claimable or already taken) ✅
+2. Invalid (username is banned or is collectible NFT) 🚫
+3. On Fragment (username is for sale or auction proceed) ❕
 
 # Features
 
