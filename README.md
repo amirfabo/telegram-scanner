@@ -24,4 +24,11 @@ Three mode available:
 - git clone https://github.com/amirfabo/telegram-scanner.git
 - cd telegram-scanner
 - pip install -r requirements.txt
-- python3 scanner.py
+
+## ⚠️ Note before using
+
+⬇️ You must edit the configuration file keys (<code>settings.ini</code>) like below:
+
+1. First replace Telegram API authentication info ([generate](https://my.telegram.org/))
+2. Second save and replace String Session hash of your telethon session. ([See more](http://docs.telethon.dev/en/stable/concepts/sessions.html#string-sessions))
+3. Finally, You can run the scanner with <code>python3 scanner.py</code> command.
