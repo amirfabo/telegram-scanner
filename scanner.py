@@ -32,7 +32,6 @@ async def executor(client: TelegramClient, word_list: list[str], file_path: str)
             await client(CheckUsernameRequest(username="durov"))
 
         except FloodWaitError as err:
-            print(f"In {_}th attempt we got flood!")
             if err.seconds >= 10:
                 break
 
