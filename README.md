@@ -2,6 +2,11 @@
 
 <b>Telegram usernames scanner</b> can scan usernames and detect their status. 
 
+<p align="center">
+<img src="images/image-1.png" width="500"/>
+<img src="images/image-2.png" width="200"/>
+</p>
+
 💠 Three mode available:
 
 1. Occupied (username is claimable or already taken) ✅
