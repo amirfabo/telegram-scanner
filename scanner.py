@@ -63,7 +63,12 @@ async def executor(client: TelegramClient, word_list: list[str], file_path: str)
             tag = err.ID
             invalid_count += 1
 
-        result = f"{username}:{tag}"
+        result = "{username}{delimiter}{tag}".format(
+            username=username,
+            delimiter=GENERAL_SECTION['delimiter'],
+            tag=tag,
+        )
+
         results.append(result)
 
         with open(file_path, "w") as file:
@@ -85,7 +90,12 @@ async def executor(client: TelegramClient, word_list: list[str], file_path: str)
 async def main():
     global word_count
 
-    wordlist_file_path = input("[ASK] Enter the word list file path: ")
+    if len(sys.argv) == 2:
+        wordlist_file_path = sys.argv[1]
+
+    else:
+        wordlist_file_path = input("[ASK] Enter the word list file path: ")
+
     with open(wordlist_file_path) as file:
         wordlist = file.read().splitlines()
 
