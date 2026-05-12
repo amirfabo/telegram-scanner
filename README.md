@@ -1,62 +1,54 @@
-# Telegram Usernames Scanner
+## Telegram Username Scanner
 
-<b>Telegram usernames scanner</b> can scan usernames and specify their status. 
+A powerful tool for scanning Telegram usernames.
 
 <p align="center">
-<img src="images/image-1.png" width="500"/>
-<img src="images/image-2.png" width="200"/>
+<img src=".github/1.png" width="500"/>
+<img src=".github/2.png" width="200"/>
 </p>
 
-💠 Three mode available:
+### Features
 
-1. Occupied (username is claimable or already taken) ✅
-2. Invalid (username is banned or is collectible NFT) 🚫
-3. On Fragment (username is for sale or auction proceed) 🌀
-
-## Features
-
+- Fast
 - Easy to Use
-- Interactive console statistics
 - Unlimited and Reliable
 
-## Requirements
+### Requirements
 
 1. Python 3.10+
 2. Telethon
 
-## Setup
+### Setup
 
-- git clone https://github.com/amirfabo/telegram-scanner.git
-- cd telegram-scanner
-- pip install -r requirements.txt
-
-## ⚠️ Note before using
-
-⬇️ You must edit the configuration file values (<code>settings.ini</code>) like below:
-
-1. First replace Telegram API authentication info ([generate](https://my.telegram.org/))
-2. Second save and replace String Session hash of your telethon session. ([See more](http://docs.telethon.dev/en/stable/concepts/sessions.html#string-sessions))
-3. `result_file = ./result.txt` option to set the name of output file.
-4. `delimiter = :` option to set separator of username and its status in output file.  
-
-## Usage
-
-<i>Enter relative/absolute file path of wordlist in interactive mode or pass as argument:</i>
-
-```bash
-# interactive mode
-$ python3 scanner.py
-
-[ASK] Enter the word list file path: /home/dict/wordlist.txt
+```
+$ git clone https://github.com/amirfabo/telegram-scanner.git
+$ cd telegram-scanner
+$ pip install -r requirements.txt
 ```
 
-### OR
+You must edit `settings.ini` file (or make your config file with `[general]` section):
 
+- `api_id` and `api_hash`, see <a href="https://my.telegram.org">here</a>.
+- `string_session`, see <a href="https://docs.telethon.dev/en/stable/concepts/sessions.html">here</a>.
+
+### Usage
+
+*1. Basic:*
 ```bash
-# absolute file path
-$ python3 scanner.py /home/dict/wordlist.txt
-
-# relative file path
-$ cd /home/dict
-$ python3 scanner.py ./wordlist.txt
+$ python main.py <filename>
 ```
+*2. Specific output file:*
+```bash
+$ python main.py -o <output> <filename>
+```
+*3. Specific configuration:*
+```bash
+$ python main.py -c <config> <filename>
+```
+
+### Username Status:
+
+1. **Occupied** (*is claimable or already taken*) ✅
+2. **~~Not Occupied~~** (*Not currently supported*)
+2. **Invalid** (*banned or is collectible NFT*) 🚫
+3. **On Fragment** (*for sale or auction proceed*) 🔄
