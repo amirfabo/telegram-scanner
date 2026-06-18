@@ -52,3 +52,9 @@ $ python main.py -c <config> <filename>
 2. **~~Not Occupied~~** (*Not currently supported*)
 2. **Invalid** (*banned or is collectible NFT*) 🚫
 3. **On Fragment** (*for sale or auction proceed*) 🔄
+
+### Support
+
+Your support helps us continue the development and maintenance of this project ❤️
+
+TON or USDT (*TON*): `UQDH6BLtvJheNdQNbrVyI3_4dbsDaoYsyiOHyYVL_ndJ3D7u`<br>USDT (*TRC20*): `TMXg6DL2y8EC9RfXRzonDYrRrviZMrVzaL`
